@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        backjumbo: '#9f2e3d',
+        backsection: '#fffbf7',
       },
     },
   },
