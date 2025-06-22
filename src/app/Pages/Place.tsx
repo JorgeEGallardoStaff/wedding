@@ -5,7 +5,7 @@ const BackgroundSection = () => {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center px-4 py-10">
       <Image
-        src="/BNoviosLugar.jpg"
+        src="/BnoviosLugar.jpg"
         alt="Fondo"
         fill
         className="object-cover"

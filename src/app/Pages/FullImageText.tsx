@@ -10,7 +10,7 @@ const FullImageText = () => {
     >
     <div className="hidden md:block w-full h-[60vh] overflow-hidden relative">
     <Image
-      src="/ANoviosTitulo.jpg"
+      src="/AnoviosTitulo.jpg"
       alt="Foto de los novios"
       className="absolute w-full h-auto"
       style={{ top: "-20px", left: "0", transform: "translateY(-15%)" }}
@@ -24,7 +24,7 @@ const FullImageText = () => {
 
      <div className="block md:hidden w-full h-[50vh] overflow-hidden relative flex justify-center" >
   <Image
-    src="/ANoviosTitulo.jpg"
+    src="/AnoviosTitulo.jpg"
     alt="Foto de los novios"
     className="absolute w-full h-full object-cover"
     style={{ top: "0px", left: "0" }}
