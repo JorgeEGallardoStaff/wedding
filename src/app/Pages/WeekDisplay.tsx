@@ -13,17 +13,8 @@ const WeekDisplay: React.FC<WeekDisplayProps> = ({ startDate, selectedDate }) =>
   const days = Array.from({ length: 7 }, (_, i) => addDays(startDate, i));
 
   const handleAddToCalendar = () => {
-    const date = selectedDate;
-    const eventTitle = "Boda Idali & Omar";
-    const eventDetails = "Acompáñanos en nuestro día especial. Misa Iglesia Catedral";
-    
-    // Convertimos la fecha al formato YYYYMMDDTHHmmssZ (UTC)
-    const startDateTime = format(date, "yyyyMMdd") + "T230000Z"; // 12:00 PM UTC
-    const endDateTime = format(date, "yyyyMMdd") + "T2800000Z";   // 1:00 PM UTC
 
-    const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
-      eventTitle
-    )}&dates=${startDateTime}/${endDateTime}&details=${encodeURIComponent(eventDetails)}`;
+    const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=Boda%20Idali%20%26%20Omar&dates=20251018T230000Z/20251019T000000Z&details=Acompáñanos%20en%20nuestro%20día%20especial.%20Misa%20Iglesia%20Catedral`;
 
     window.open(googleCalendarUrl, "_blank");
   };

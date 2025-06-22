@@ -12,7 +12,7 @@ const Confirmation = () => {
       <div className="bg-backsection flex items-center justify-center md:min-h-screen px-4">
         <div className="bg-backsection w-full md:w-2/3 py-10 text-center space-y-10">
           <p
-            className="text-6xl md:text-7xl tracking-[0.06em] text-backjumbo"
+            className="text-5xl md:text-7xl tracking-[0.06em] text-backjumbo"
             style={{ fontFamily: "vidaloka" }}
           >
             Confirmación
