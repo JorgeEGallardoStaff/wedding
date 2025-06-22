@@ -42,14 +42,14 @@
 
 @font-face {
   font-family: 'vidaloka';
-  src: url('/fonts/Vidaloka-Regular.otf') format('opentype');
+  src: url('/fonts/Vidaloka-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'alice';
-  src: url('/fonts/Alice-Regular.otf') format('opentype');
+  src: url('/fonts/Alice-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
