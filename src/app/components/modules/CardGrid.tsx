@@ -13,7 +13,7 @@ const CardGrid = () => {
 
       />
       <InfoCard
-        iconSrc="/anillos.svg"
+        iconSrc="/icons/Anillos2.svg"
         title="Boda Civil"
         subtitle="Jardín el palmar"
         time="7:45 P.M."
