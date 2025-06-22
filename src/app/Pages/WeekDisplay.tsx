@@ -14,7 +14,7 @@ const WeekDisplay: React.FC<WeekDisplayProps> = ({ startDate, selectedDate }) =>
 
   const handleAddToCalendar = () => {
 
-    const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=Boda%20Idali%20%26%20Omar&dates=20251018T230000Z/20251019T000000Z&details=Acompáñanos%20en%20nuestro%20día%20especial.%20Misa%20Iglesia%20Catedral`;
+    const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=Boda%20Idaly%20%26%20Omar&dates=20251018T230000Z/20251019T000000Z&details=Acompáñanos%20en%20nuestro%20día%20especial.%20Misa%20Iglesia%20Catedral`;
 
     window.open(googleCalendarUrl, "_blank");
   };

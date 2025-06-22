@@ -2,7 +2,7 @@ import InfoCard from "./InfoCard";
 
 const CardGrid = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-20 z-10">
+    <div className="flex flex-col lg:flex-row flex-wrap  justify-center items-center gap-20 z-10">
       <InfoCard
         iconSrc="/icons/Templo.svg"
         title="Ceremonia"
@@ -13,10 +13,19 @@ const CardGrid = () => {
 
       />
       <InfoCard
+        iconSrc="/anillos.svg"
+        title="Boda Civil"
+        subtitle="Jardín el palmar"
+        time="7:45 P.M."
+        link="https://maps.app.goo.gl/ErExK4r1Zj3YA5DP8"
+        gap ="70"
+      />
+
+      <InfoCard
         iconSrc="/icons/Copas.svg"
         title="Recepción"
-        subtitle="Salón el palmar"
-        time="7:30 P.M."
+        subtitle="Salón del Jardín el palmar"
+        time="9:00 P.M."
         link="https://maps.app.goo.gl/ErExK4r1Zj3YA5DP8"
         gap ="70"
       />

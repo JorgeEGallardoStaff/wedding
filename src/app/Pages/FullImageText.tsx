@@ -41,7 +41,7 @@ const FullImageText = () => {
         </div>
 
         <p className="text-3xl md:text-5xl font-bold max-w-xs md:max-w-lg">
-          IDALI{" "}
+          IDALY{" "}
           <NoFontText text="&" classes="text-3xl md:text-5xl"></NoFontText> OMAR
         </p>
 

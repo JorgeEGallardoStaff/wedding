@@ -16,7 +16,37 @@ useEffect(() => {
     setNombre(decodeURIComponent(params.get('nombre') || 'Invitado/a'));
     setPases(params.get('pases') || '2');
   }
-}, []);
+
+  const handleVisibilityChange = () => {
+    if (!audioRef.current) return;
+
+    if (document.hidden) {
+      audioRef.current.pause();
+    } else {
+      if (!showModal && audioRef.current.paused) {
+        audioRef.current.play().catch((err) => {
+          console.error("Error al reanudar música:", err);
+        });
+      }
+    }
+  };
+
+  const handleBeforeUnload = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+  };
+
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  window.addEventListener("beforeunload", handleBeforeUnload);
+
+  return () => {
+    document.removeEventListener("visibilitychange", handleVisibilityChange);
+    window.removeEventListener("beforeunload", handleBeforeUnload);
+  };
+}, [showModal]); 
+
+
 
   const handleAccept = () => {
     setShowModal(false);

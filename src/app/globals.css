@@ -125,4 +125,7 @@
 .embla__button:disabled {
   color: var(--detail-high-contrast);
 }
-
+.embla__button:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}

@@ -13,7 +13,7 @@ const MainText = () => {
         </div>
 
         <p className="text-3xl md:text-5xl font-bold max-w-xs md:max-w-lg tracking-[0.2em] py-1">
-          IDALI{" "}
+          IDALY{" "}
           <NoFontText text="&" classes="text-4xl md:text-6xl"></NoFontText> OMAR
         </p>
         <div className="w-1/6 border-t border-white"></div>
