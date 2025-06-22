@@ -34,7 +34,7 @@ const WeekDisplay: React.FC<WeekDisplayProps> = ({ startDate, selectedDate }) =>
     <div className="flex space-x-6 text-lg font-semibold mx-auto text-center  justify-center tracking-[0.1em] overflow-hidden " style={{fontFamily:"Alice"}}>
       {days.map((day, index) => {
         const isSelected = format(day, "yyyy-MM-dd") === format(selectedDate, "yyyy-MM-dd");
-        return (
+       return (
           <div key={index} className="flex flex-col items-center relative">
             <span className={`capitalize mb-4 text-2xl md:text-3xl ml-4 ${isSelected ? "text-backjumbo underline" : "text-gray-600"}`}>{format(day, "EEE", { locale: es })}</span>
             <span className={`text-3xl ml-4 ${isSelected ? "text-backjumbo underline" : "text-gray-600"}`}>
