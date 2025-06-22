@@ -1,16 +1,22 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 const WelcomeModalWithMusic = () => {
   const [showModal, setShowModal] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const searchParams = useSearchParams();
 
-  const nombre = searchParams.get('nombre') || 'Invitado/a';
-  const pases = searchParams.get('pases') || '2';
+ const [nombre, setNombre] = useState('Invitado/a');
+const [pases, setPases] = useState('2');
+
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    setNombre(decodeURIComponent(params.get('nombre') || 'Invitado/a'));
+    setPases(params.get('pases') || '2');
+  }
+}, []);
 
   const handleAccept = () => {
     setShowModal(false);
