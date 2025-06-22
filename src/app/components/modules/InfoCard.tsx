@@ -24,7 +24,7 @@ const InfoCard = ({ iconSrc, title, subtitle, time, link, gap="0" }: InfoCardPro
         </div>
         <h2 className={`text-4xl md:text-5xl mt-${gap}`} style={{marginTop: `${gap}px`}}  >{title}</h2>
         <p className="mt-3 text-lg md:text-lg">{subtitle}</p>
-        <p className="mt-3 text-sm">{time}</p>
+        <p className="mt-3 text-lg">{time}</p>
       </div>
       <a
         href={link}
