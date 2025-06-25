@@ -28,7 +28,7 @@ const GiftTable = () => {
             buttonText="Ver Info"
             action={() => setShowModal(true)}
           />
-          <ModalHearth showModal={showModal} title="Recomendaciones">
+          <ModalHearth setShowModal={setShowModal} showModal={showModal} title="Recomendaciones">
             <ul className="list-disc list-inside text-xl text- px-4 text-gray-600">
               <li>
                 {" "}
@@ -96,7 +96,15 @@ const GiftTable = () => {
              action={() => setShowModal2(true)}
           />
         </div>
-        <ModalHearth showModal={showModal2} title="Mesas de Regalos">
+        <ModalHearth setShowModal={setShowModal2} showModal={showModal2} title="Mesas de Regalos">
+          <p className="text-xl text-gray-600 mb-4">
+            Para nosotros, lo más importante es compartir este día tan especial con ustedes.<br></br>
+
+            Si desean hacernos un obsequio, contamos con distintas opciones que se pueden adaptar a lo que sea más cómodo para ustedes:
+            pueden hacerlo a través de nuestra mesa de regalos virtual, en efectivo a la entrada del salón de manera física y en la mesa de regalos.<br></br>
+
+            ¡Gracias por acompañarnos y ser parte de este momento tan significativo en nuestras vidas!
+          </p>
                <button
   onClick={() => {
      setShowModal2(false)
