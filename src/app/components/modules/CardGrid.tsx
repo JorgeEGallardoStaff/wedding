@@ -16,7 +16,7 @@ const CardGrid = () => {
         iconSrc="/icons/Anillos2.svg"
         title="Boda Civil"
         subtitle="Jardín el palmar"
-        time="7:45 P.M."
+        time="7:40 P.M."
         link="https://maps.app.goo.gl/ErExK4r1Zj3YA5DP8"
         gap ="70"
       />
@@ -25,7 +25,7 @@ const CardGrid = () => {
         iconSrc="/icons/Copas.svg"
         title="Recepción"
         subtitle="Salón del Jardín el palmar"
-        time="9:00 P.M."
+        time="8:30 P.M."
         link="https://maps.app.goo.gl/ErExK4r1Zj3YA5DP8"
         gap ="70"
       />

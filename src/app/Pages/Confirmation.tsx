@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeartLine from "../components/HeartLine";
 const Confirmation = () => {
-  const phoneNumber = "5211234567890"; // 👈 Reemplaza con el número real (con código país, sin +)
+  const phoneNumber = "6181494486"; 
   const message = encodeURIComponent(
     "¡Hola! Quiero confirmar mi asistencia a la boda. 🎉"
   );
